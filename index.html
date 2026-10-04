@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhiyukth Vlogs — Gaming. Journeys. Real Stories.</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="theme-color" content="#070911">
+  <meta property="og:type" content="website"><meta property="og:title" content="Abhiyukth Vlogs — Gaming. Journeys. Real Stories.">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <!-- SITE_METADATA -->
+  <link rel="icon" type="image/svg+xml" href="./assets/av-mark.svg">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home"><img src="{{AVATAR}}" alt="" width="42" height="42"><span>ABHIYUKTH<span class="brand-small">VLOGS</span></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav id="nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#videos">Videos</a><a href="#live">Live</a><a href="#playlists">Playlists</a><a href="#about">About</a><a class="nav-subscribe" href="{{SUBSCRIBE_URL}}">Subscribe <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> MALAYALAM CREATOR • GAMING &amp; VLOGS</p>
+        <h1 id="hero-title">Gaming.<br><span class="gradient-text">Journeys.</span><br>Real Stories<span class="purple">.</span></h1>
+        <p class="hero-description">{{DESCRIPTION}}</p>
+        <div class="hero-actions"><a class="button primary" href="#videos">Explore Videos <span aria-hidden="true">↗</span></a><a class="subscribe-3d" href="{{SUBSCRIBE_URL}}"><span><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="6" fill="white"/><path d="m11 5 9 5-9 5Z" fill="#ff0033"/></svg>Subscribe on YouTube</span></a></div>
+        <p class="hero-note"><span class="mini-line"></span> A little gaming. A little wandering. All real.</p>
+      </div>
+      <div class="hero-art"><div class="scene-top"><span class="micro">THE CREATOR UNIVERSE</span><span class="micro">01 / EXPLORE</span></div>
+        <div id="scene" class="scene" role="img" aria-label="Floating game controller, camera, play symbol and orbital rings"><img class="scene-fallback" src="./assets/scene-fallback.svg" alt="" width="600" height="500"></div>
+        <div class="scene-controls" hidden><div class="segmented" aria-label="Scene mode"><button data-mode="gaming" aria-pressed="true">Gaming</button><button data-mode="vlogs" aria-pressed="false">Vlogs</button></div><button id="motion" class="motion-button" aria-pressed="false">Pause motion</button></div>
+        <p class="scene-hint" hidden>Drag to explore <span aria-hidden="true">↔</span></p>
+      </div>
+    </section>
+    <div class="chapter-strip" aria-label="Channel topics"><span>PS5 ADVENTURES</span><span aria-hidden="true">✦</span><span>MALAYALAM STORIES</span><span aria-hidden="true">✦</span><span>PLACES &amp; PEOPLE</span><span aria-hidden="true">✦</span><span>EVERYDAY MOMENTS</span></div>
+    <section class="section featured" aria-labelledby="featured-title"><div class="section-heading"><div><p class="eyebrow">01 / THE SPOTLIGHT</p><h2 id="featured-title">Your next watch.</h2></div><a class="text-link" href="{{CHANNEL_URL}}/videos">Visit the channel ↗</a></div>
+      <!-- FEATURED_VIDEO -->
+      <div class="featured-empty" {{FEATURED_HIDDEN}}><div class="featured-visual" aria-hidden="true"><span class="giant-play">▶</span><span class="visual-caption">PRESS PLAY. FIND YOUR NEXT ADVENTURE.</span><span class="visual-corner">AV / STORIES</span></div><div class="featured-copy"><p class="eyebrow">FROM THE CHANNEL</p><h3>One channel.<br>More ways to escape.</h3><p>From the next PS5 adventure to the moments between destinations. Find your next watch on YouTube.</p><a class="button outline" href="{{CHANNEL_URL}}/videos">Explore channel videos ↗</a></div></div>
+    </section>
+    <section class="section" id="videos" aria-labelledby="videos-title"><div class="section-heading"><div><p class="eyebrow">02 / PICK YOUR MOOD</p><h2 id="videos-title">The video collection<span class="purple">.</span></h2></div><p class="section-description">Games, getaways, and everything in between.</p></div>
+      <div class="collection-tools" hidden><div class="filters" aria-label="Video categories"><button data-category="All" aria-pressed="true">All</button><button data-category="Gaming" aria-pressed="false">Gaming</button><button data-category="Vlogs" aria-pressed="false">Vlogs</button><button data-category="Live Replays" aria-pressed="false">Live Replays</button></div><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Search video titles" aria-label="Search video titles"></label></div>
+      <div id="video-grid" class="video-grid"><!-- VIDEO_CARDS --></div>
+      <div id="video-empty" class="empty-state" {{EMPTY_HIDDEN}}><span class="empty-icon" aria-hidden="true">▷</span><h3>The next adventure is on YouTube.</h3><p>Explore the channel’s videos directly on YouTube.</p><a class="text-link" href="{{CHANNEL_URL}}/videos">Browse all videos ↗</a></div>
+      <p id="results" class="sr-only" role="status"></p>
+    </section>
+    <section class="section live-section" id="live" aria-labelledby="live-title"><div class="live-orbit" aria-hidden="true"><span>▶</span><i></i><i></i></div><div class="live-copy"><p class="eyebrow">03 / BETTER TOGETHER</p><h2 id="live-title">Same game.<br>A whole new energy.</h2><p>Malayalam conversations, PS5 sessions, and the moments you want to share. Explore stream recordings and check YouTube for upcoming broadcasts.</p><a class="button primary" href="{{STREAMS_URL}}">Explore streams &amp; replays ↗</a><p class="live-note">Check the channel for current broadcast status.</p></div></section>
+    <section class="section playlists-section" id="playlists" aria-labelledby="playlists-title"><p class="eyebrow">04 / STAY A LITTLE LONGER</p><div class="playlist-row"><h2 id="playlists-title">Find your rabbit hole.</h2><div><p>A new world, a different journey, one more episode.<br>Explore the channel’s playlists on YouTube.</p><a class="text-link" href="{{PLAYLISTS_URL}}">Browse playlists ↗</a></div></div><div id="playlist-list"><!-- PLAYLIST_CARDS --></div></section>
+    <section class="section about-section" id="about" aria-labelledby="about-title"><div class="about-mark" aria-hidden="true"><img src="{{AVATAR}}" width="200" height="200" alt=""><span>MALAYALAM. EVERYWHERE.</span></div><div><p class="eyebrow">05 / BEHIND THE PLAY BUTTON</p><h2 id="about-title">A curious spirit.<br>A controller in hand.</h2><p class="about-description">Welcome to Abhiyukth Vlogs — a space for Malayalam gaming, travel, and everyday stories. Come for the PS5 adventures, stay for the journeys and live conversations.</p><p class="about-description">Whether you’re exploring a new game or a new place, there’s always another story to share.</p><a class="text-link" href="{{CHANNEL_URL}}/about">Meet the channel ↗</a></div></section>
+    <section class="section subscribe-section" id="subscribe" aria-labelledby="subscribe-title"><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2 id="subscribe-title">Be part of the<br>next adventure<span class="purple">.</span></h2><p>New worlds. Real moments. See you on YouTube.</p><a class="subscribe-3d" href="{{SUBSCRIBE_URL}}"><span><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="6" fill="white"/><path d="m11 5 9 5-9 5Z" fill="#ff0033"/></svg>Subscribe on YouTube <span aria-hidden="true">↗</span></span></a></section>
+  </main>
+  <footer class="section footer"><a class="brand" href="#home"><img src="{{AVATAR}}" alt="" width="36" height="36"><span>ABHIYUKTH<span class="brand-small">VLOGS</span></span></a><p>© {{YEAR}} {{NAME}}</p><div><a href="{{CHANNEL_URL}}">YouTube ↗</a><a href="#home">Back to top ↑</a></div></footer>
+  <dialog id="player" aria-labelledby="player-title"><div class="player-header"><h2 id="player-title">Video player</h2><button id="close-player" aria-label="Close video player">✕</button></div><div id="player-frame"></div><p class="player-help">If playback is unavailable, open the video directly on YouTube.</p><a id="watch-fallback" class="text-link" href="{{CHANNEL_URL}}">Watch on YouTube ↗</a></dialog>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
