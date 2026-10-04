@@ -23,4 +23,8 @@ The Three.js chunk is approximately 143KB gzip and is lazy-loaded. Vite emits an
 
 ## Publishing
 
-New public repository created at https://github.com/Abhiyukth-vlogs/abhiyukth-vlogs with the account explicitly selected by the user. GitHub Pages is configured to use GitHub Actions. GitHub returned https://abhiyukth-vlogs.github.io/abhiyukth-vlogs/ as the Pages URL. Deployment verification is recorded after the workflow finishes.
+New public repository created at https://github.com/Abhiyukth-vlogs/abhiyukth-vlogs with the account explicitly selected by the user. GitHub Pages is configured to use GitHub Actions. GitHub returned https://abhiyukth-vlogs.github.io/abhiyukth-vlogs/ as the Pages URL.
+
+The [initial deployment workflow](https://github.com/Abhiyukth-vlogs/abhiyukth-vlogs/actions/runs/37215170055) completed successfully: dependency installation, content validation, production build, artifact upload, and Pages deployment all passed.
+
+The public page was inspected in the browser and independently tested at 390px, 768px, and 1440px. Published checks passed for layout overflow, mobile menu, navigation, empty-state filters and search, 3D scene switching, pause/resume, offscreen pause, reduced motion, simulated WebGL failure, JavaScript-disabled content, and delayed iframe loading. All site assets loaded without HTTP failures. No application runtime errors were detected. Canonical metadata resolves to the actual Pages address. Actual channel video playback remains unverified for the content limitation described above.
